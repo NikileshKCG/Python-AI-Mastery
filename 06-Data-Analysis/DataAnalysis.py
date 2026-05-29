@@ -24,14 +24,14 @@ def numpy_basics():
 
     # Creating arrays -- far faster than Python lists for math
     arr1  = np.array([10, 20, 30, 40, 50])
-    arr2  = np.arrange(1, 6)            # [1, 2, 3, 4, 5]
+    arr2  = np.arange(1, 6)            # [1, 2, 3, 4, 5]
     arr3  = np.linspace(0, 1, 5)        # 5 evenly space between 0 and 1
     zeros = np.zeros((3, 3))            # 3x3 matrix of zeros
     ones  = np.ones((2, 4))             # 2x4 matrix of ones
     rand  = np.random.rand(3, 3)        # random floats 0-1
 
     print(f" \n arr1        : {arr1}")
-    print(f" arrange        : {arr2}")
+    print(f" arange        : {arr2}")
     print(f" linspace       : {arr3}")
     print(f" zeros (3X3)    :\n{zeros}")
 
@@ -46,7 +46,7 @@ def numpy_basics():
     print(f"\n Random data  : {data}")
     print(f" Mean           : {np.mean(data):.2f}")
     print(f" Std Dev        : {np.std(data):.2f}")
-    print(f" Min / Max      : {np.min(data) / {np.max(data)}}")
+    print(f" Min / Max      : {np.min(data)} / {np.max(data)}")
     print(f" Median         : {np.median(data):.2f}")
     print(f" 25th pctile    : {np.percentile(data, 25):.2f}")
 
@@ -77,7 +77,7 @@ def generate_sales_dataset(n=200):
     regions     = ["North", "South", "East", "West"]
     categories  = ["Electronics", "Clothing", "Food", "Books", "Sports"]
     products    = {
-        "Electronis": ["Laptop", "Phone", "Table", "Headphones"],
+        "Electronics": ["Laptop", "Phone", "Table", "Headphones"],
         "Clothing"  : ["Shirts", "Jeans", "Jacket", "Shoes"],
         "Food"      : ["Croceries", "Snacks", "Beverages", "Frozen"],
         "Books"     : ["Fiction", "Non-Fiction", "Textbook", "Comics", "Novels"],
