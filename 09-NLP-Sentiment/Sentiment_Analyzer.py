@@ -418,7 +418,7 @@ def plot_word_frequencies(df):
         ax.set_facecolor("#1a1a2e")
         ax.tick_params(colors="#aaa")
         ax.title.set_color("white")
-        ax.yaxis.label.set_color("#aaa")
+        ax.xaxis.label.set_color("#aaa")
         ax.yaxis.label.set_color("#aaa")
 
         subset_texts = df[df["label"] == label]["clean_text"]
